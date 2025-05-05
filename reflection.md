@@ -1,7 +1,7 @@
 # Reflection
 
-Student Name:  name
-Sudent Email:  email
+Student Name:  Gilda Emeni
+Sudent Email:  gemeni@syr.edu
 
 ## Instructions
 
@@ -22,4 +22,11 @@ Examples:
 **Best Reflection** "I learned when to use while vs for loops. While loops are for sentiel-controlled values (waiting for a condition to occur), vs for loops are for iterating over collections of fixed values."
 
 `--- Reflection Below This Line ---`
+This assignment taught me how to use Playwright with Python to perform web scraping on real-world websites, specifically extracting structured data from HTML using CSS selectors. I learned how to navigate sibling elements in the DOM using `query_selector("~ *")` and how important it is to wait for elements to load on dynamic pages like those from the Wayback Machine.
+
+One area I struggled with was figuring out why my scraper wasn’t producing the expected output file. It turned out that the issue wasn’t with my scraping logic, but with how Python treats package imports when running scripts from different folders. I had to debug import errors like `ModuleNotFoundError: No module named 'code.menuitem'`, which helped me better understand Python’s module system and the use of `__init__.py` files. I also learned how to resolve path issues using `PYTHONPATH=.` when executing scripts.
+
+I still want more practice with writing robust scraping logic that handles slow-loading or incomplete pages. I also realized that testing scraping scripts requires carefully checking selectors and print statements to verify that items are being collected correctly before writing to a CSV.
+
+Overall, this assignment helped me build confidence in combining multiple tools such as Playwright, Pandas, and dataclasses into a working ETL pipeline. I feel more prepared for data extraction tasks in future projects.
 
